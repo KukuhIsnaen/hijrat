@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: #ffffff;
+        }
+
+        .love-animation {
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+            
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Style untuk gambar love */
+        .love-img {
+            width: 800px; /* Sesuaikan dengan ukuran gambar */
+            height: auto;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 3s ease forwards;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Gambar love -->
+        <img src="images/loveee.jpg" alt="Love" class="love-animation love-img">
+        <!-- Tulisan -->
+        <div class="message"><h1>Love You More Forever</h1></div>
+
+        <p class="gsap-reveal-hero text-center"><a href="index.html" class="btn btn-outline-black">Kalo masih mau liat yang tadi bisa klik disini yaa, makasih udah dilihat semuanya:)</a></p>    
+
+    </div>
+</body>
+</html>
